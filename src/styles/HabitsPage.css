@@ -1,0 +1,78 @@
+.habits-page {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .habits-header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .habits-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c344b;
+    margin: 0;
+  }
+  
+  .dark-mode .habits-header h1 {
+    color: #e8ecef;
+  }
+  
+  .habits-subtitle {
+    font-size: 1.1rem;
+    color: #748297;
+    margin: 10px 0;
+  }
+  
+  .dark-mode .habits-subtitle {
+    color: #a3b1c9;
+  }
+  
+  .undo-bar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    animation: slideUp 0.3s ease-out;
+  }
+  
+  .dark-mode .undo-bar {
+    background: #2c344b;
+  }
+  
+  .undo-bar p {
+    margin: 0;
+    color: #2c344b;
+  }
+  
+  .dark-mode .undo-bar p {
+    color: #e8ecef;
+  }
+  
+  .undo-btn {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .undo-btn:hover {
+    background: #357abd;
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }

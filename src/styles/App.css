@@ -1,0 +1,115 @@
+.app-container {
+  min-height: 100vh;
+  background: #f5f7fa;
+  padding: 80px 20px 20px;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app-container.dark-mode {
+  background: #1a1f2e;
+  color: #e8ecef;
+}
+
+.app-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 15px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  z-index: 100;
+}
+
+.dark-mode .app-nav {
+  background: #2c344b;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #2c344b;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .nav-link {
+  color: #e8ecef;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: #e8ecef;
+  color: #4a90e2;
+}
+
+.dark-mode .nav-link:hover,
+.dark-mode .nav-link.active {
+  background: #3b4562;
+}
+
+.mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dark-mode .mode-toggle {
+  background: #2c344b;
+  color: #e8ecef;
+}
+
+.mode-toggle:hover {
+  background: #e8ecef;
+}
+
+.dark-mode .mode-toggle:hover {
+  background: #3b4562;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background-color: #dc3545; /* Red for logout */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: 10px; /* Space from dark mode toggle */
+}
+
+.logout-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+  transform: translateY(-1px); /* Slight lift effect */
+}
+
+.logout-button:active {
+  transform: translateY(0); /* Reset on click */
+}
+
+/* Responsive adjustment (optional) */
+@media (max-width: 480px) {
+  .logout-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    margin-left: 5px;
+  }
+}

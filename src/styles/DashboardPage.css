@@ -1,0 +1,415 @@
+.dashboard-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.dashboard-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2c344b;
+  margin: 0;
+}
+
+.dark-mode .dashboard-header h1 {
+  color: #e8ecef;
+}
+
+.dashboard-quote {
+  font-size: 1.2rem;
+  color: #748297;
+  margin: 15px 0;
+  font-style: italic;
+}
+
+.dark-mode .dashboard-quote {
+  color: #a3b1c9;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dashboard-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.dark-mode .dashboard-card {
+  background: #2c344b;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .dashboard-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-card h2 {
+  font-size: 1.5rem;
+  color: #2c344b;
+  margin: 0 0 20px;
+  font-weight: 600;
+}
+
+.dark-mode .dashboard-card h2 {
+  color: #e8ecef;
+}
+
+.habit-calendar {
+  min-height: 350px;
+  padding: 30px; 
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); 
+  gap: 12px; 
+  background: #fafbfc; 
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.03); 
+}
+
+.dark-mode .calendar-grid {
+  background: #252b3f; 
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: #fff; 
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .calendar-day {
+  background: #2c344b; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.calendar-day:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .calendar-day:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.day-label {
+  font-size: 0.95rem; 
+  font-weight: 500;
+  color: #4a5672; 
+  margin-bottom: 6px;
+}
+
+.dark-mode .day-label {
+  color: #a3b1c9;
+}
+
+.calendar-day svg {
+  stroke: none;
+  fill: #d8e0ea; 
+  width: 20px; 
+  height: 20px;
+  transition: fill 0.3s ease; 
+}
+
+.calendar-day svg[fill='#27ae60'] {
+  fill: #27ae60; 
+}
+
+
+.progress-circle {
+  text-align: center;
+}
+
+.circle-container {
+  position: relative;
+  margin: 20px auto;
+}
+
+.circle-container svg {
+  transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+.circle-container text {
+  fill: #2c344b;
+}
+
+.dark-mode .circle-container text {
+  fill: #e8ecef;
+}
+
+.progress-text {
+  font-size: 1.1rem;
+  color: #4a90e2;
+  margin-top: 15px;
+}
+
+.dark-mode .progress-text {
+  color: #7fb6ff;
+}
+
+
+.priority-spotlight {
+  min-height: 300px;
+}
+
+.priority-spotlight ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.priority-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e8ecef;
+}
+
+.dark-mode .priority-item {
+  border-bottom-color: #4a5672;
+}
+
+.priority-icon svg {
+  stroke: #f1c40f;
+}
+
+.priority-name {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #2c344b;
+}
+
+.dark-mode .priority-name {
+  color: #e8ecef;
+}
+
+.priority-status {
+  font-size: 1rem;
+  color: #f1c40f;
+}
+
+.dark-mode .priority-status {
+  color: #f7dc6f;
+}
+
+
+.streak-leaderboard {
+  min-height: 300px;
+}
+
+.streak-leaderboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.streak-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e8ecef;
+}
+
+.dark-mode .streak-item {
+  border-bottom-color: #4a5672;
+}
+
+.streak-rank svg {
+  stroke: none;
+}
+
+.streak-name {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #2c344b;
+}
+
+.dark-mode .streak-name {
+  color: #e8ecef;
+}
+
+.streak-value {
+  font-size: 1.1rem;
+  color: #4a90e2;
+  font-weight: 500;
+}
+
+.dark-mode .streak-value {
+  color: #7fb6ff;
+}
+
+
+.weather-mood {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weather-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.weather-condition {
+  font-size: 1.2rem;
+  color: #2c344b;
+  margin: 0;
+}
+
+.dark-mode .weather-condition {
+  color: #e8ecef;
+}
+
+.weather-suggestion {
+  font-size: 1rem;
+  color: #748297;
+  margin: 5px 0 0;
+}
+
+.dark-mode .weather-suggestion {
+  color: #a3b1c9;
+}
+
+
+.category-breakdown {
+  min-height: 300px;
+}
+
+.category-breakdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+.category-icon svg {
+  stroke: #4a90e2;
+}
+
+.category-name {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #2c344b;
+}
+
+.dark-mode .category-name {
+  color: #e8ecef;
+}
+
+.category-count {
+  font-size: 1.1rem;
+  color: #4a90e2;
+  font-weight: 500;
+}
+
+.dark-mode .category-count {
+  color: #7fb6ff;
+}
+
+
+.completion-trend {
+  min-height: 400px;
+}
+
+.trend-chart {
+  height: 300px;
+}
+
+
+.milestones {
+  min-height: 300px;
+}
+
+.milestones ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.milestone-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e8ecef;
+}
+
+.dark-mode .milestone-item {
+  border-bottom-color: #4a5672;
+}
+
+.milestone-icon svg {
+  stroke: none;
+}
+
+.milestone-label {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #2c344b;
+}
+
+.dark-mode .milestone-label {
+  color: #e8ecef;
+}
+
+.milestone-days {
+  font-size: 1.1rem;
+  color: #27ae60;
+  font-weight: 500;
+}
+
+.dark-mode .milestone-days {
+  color: #2ecc71;
+}
+
+
+.empty-text {
+  text-align: center;
+  color: #748297;
+  font-size: 1.1rem;
+  padding: 20px 0;
+}
+
+.dark-mode .empty-text {
+  color: #a3b1c9;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
